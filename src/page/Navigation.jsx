@@ -10,11 +10,11 @@ function Navigation(){
     }
 
     return(
-        <div>
+        <div className="z-0 position-absolute w-100">
             <div className="d-flex flex-column">
                 { isClose === false ? 
-                <button className="btn btn-info" onClick={() => openCloseButton()}>=</button>
-                :<button className="btn btn-info" onClick={() => openCloseButton()}>x</button>
+                <button className="btn btn-info rounded-0" onClick={() => openCloseButton()}>=</button>
+                :<button className="btn btn-info rounded-0" onClick={() => openCloseButton()}>x</button>
                 }
 
                 <div className={`menu ${isClose ? "open" : ""}`}>
